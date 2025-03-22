@@ -23,14 +23,14 @@ export default function WelcomeSection() {
           </p>
         </div>
       </div>
-      <div className="absolute  top-1/8 right-1/12 transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute  top-1/8 right-1/12 transform -translate-x-1/2 animate-bounce">
               <Image 
                 src="/stickers/practice.png"
                 alt="Scroll Down"
                 width={100}
                 height={100}
               />
-            </div>
+            </div> */}
 
             <div className="absolute bottom-5 left-1/19 transform -translate-x-1/2 animate-bounce">
                     <Image 

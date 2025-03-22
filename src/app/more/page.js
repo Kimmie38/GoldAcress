@@ -27,7 +27,7 @@ export default function Home() {
       {/* About Section */}
       <section className="flex flex-col md:flex-row items-center shadow-lg px-6 py-12 max-w-6xl mx-auto text-black bg-gradient-to-br from-purple-200 via-blue-100 to-blue-300 bg-opacity-70 ">
         <div className="w-full md:w-1/2 flex justify-center">
-          <Image src="/Her-image.jpeg" width={400} height={300} alt="About Image" className="shadow-lg rounded-lg w-full max-w-sm md:max-w-md" />
+          <Image src="/Abbt.jpeg" width={400} height={300} alt="About Image" className="shadow-lg rounded-lg w-full max-w-sm md:max-w-md" />
         </div>
         <div className="w-full md:w-1/2 md:pl-6 mt-6 md:mt-0 text-lg leading-relaxed">
           <h2 className="text-3xl font-bold mb-4 text-center md:text-left">The Birth Of GoldAcres:</h2>

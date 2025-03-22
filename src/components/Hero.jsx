@@ -16,15 +16,15 @@ const Hero = () => {
       </div>
 
       <div className="relative text-white text-left px-6 md:px-12 max-w-3xl ml-8">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 w-full">
-          <span className="block">Give The Child The Gift</span>
-          <span className="block">Of Education</span>
+        <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-4 w-full">
+          <span className="block">Give The A The Gift</span>
+          <span className="block">Of Learning</span>
         </h1>
 
-        <p className="text-lg md:text-xl mb-6 max-w-2xl">
+        {/* <p className="text-lg md:text-xl mb-6 max-w-2xl">
           At Gold Acres, we believe every individual possesses hidden treasures waiting to be unearthed.
           Our mission is to provide a nurturing environment where learners of all abilities thrive.
-        </p>
+        </p> */}
         <Link 
           href="/read-more"
           className="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"

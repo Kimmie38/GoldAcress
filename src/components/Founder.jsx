@@ -31,7 +31,7 @@ const Founder = () => {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="/Abbt.jpeg"
+            src="/Her-image.jpeg"
             alt="Founder"
             className="w-[400px] h-auto md:h-[500px] rounded-lg shadow-lg object-cover"
           />

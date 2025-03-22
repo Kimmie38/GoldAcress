@@ -38,9 +38,9 @@ export default function ReadMore() {
             Gold Acres Learning Center
           </h1>
           <p className="text-gray-700 leading-relaxed mb-8">
-            At Gold Acres, we believe every individual possesses hidden treasures waiting to be unearthed. 
-            Our mission is to provide a nurturing environment where learners of all abilities discover, develop, 
-            and showcase their unique strengths.
+            We're a flexible and supportive community that provides basic literacy skills and an after-school program to empower local
+            children. Our personalized learning approach fosters confidence and creativity in each child, and ofcourse, fun is a 
+            vital part of the learning process! We believe in learning through play.
           </p>
           <Link 
             href="/more"
