@@ -19,33 +19,39 @@ export default function ReadMore() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-white relative" style={{ backgroundImage: "url('/Brick-image.jpeg')" }}>
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-purple-200 via-blue-100 to-blue-300 bg-opacity-70 relative">
       {/* Navbar */}
       <Navbar />
 
-      {/* Stickers with floating effect */}
-      <img src="/stickers/education.png" alt="Education" className="absolute top-1/11  left-10 w-24 h-24 floating" />
-      <img src="/stickers/stationery.png" alt="Stationery" className="absolute bottom-1/3 right-10 w-20 h-20 floating" />
-      <img src="/stickers/pen.png" alt="Pen" className="absolute bottom-1/4 left-20 w-16 h-16 floating" />
-      <img src="/stickers/textbook.png" alt="Textbook" className="absolute bottom-10 right-32 w-24 h-24 floating" />
-      <img src="/stickers/medal.png" alt="Medal" className="absolute top-1/3 right-1/14 w-20 h-20 floating" />
+      {/* Stickers with floating effect and responsive positioning */}
+      <img src="/stickers/education.png" alt="Education" className="absolute top-20 left-4 md:top-1/11 md:left-10 w-16 h-16 md:w-24 md:h-24 floating hidden md:block" />
+      <img src="/stickers/stationery.png" alt="Stationery" className="absolute bottom-1/4 right-4 md:bottom-1/3 md:right-10 w-14 h-14 md:w-20 md:h-20 floating hidden md:block" />
+      <img src="/stickers/pen.png" alt="Pen" className="absolute bottom-1/6 left-10 md:bottom-1/4 md:left-20 w-12 h-12 md:w-16 md:h-16 floating hidden md:block" />
+      <img src="/stickers/textbook.png" alt="Textbook" className="hidden md:block absolute bottom-10 right-32 w-24 h-24 floating" />
+      <img src="/stickers/medal.png" alt="Medal" className="absolute top-1/4 right-4 md:top-1/3 md:right-1/14 w-14 h-14 md:w-20 md:h-20 floating hidden md:block" />
 
-      {/* Main Content */}
-      <main className="flex-grow px-6 py-10 md:px-20 md:py-16">
+      {/* Add padding-top to prevent navbar overlap */}
+      <main className="flex-grow px-6 py-10 md:px-20 md:py-16 pt-24 relative">
         {/* Header Section */}
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center relative">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
-            Welcome to Gold Acres Learning Center
+            Gold Acres Learning Center
           </h1>
           <p className="text-gray-700 leading-relaxed mb-8">
             At Gold Acres, we believe every individual possesses hidden treasures waiting to be unearthed. 
             Our mission is to provide a nurturing environment where learners of all abilities discover, develop, 
             and showcase their unique strengths.
           </p>
+          <Link 
+            href="/more"
+            className="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition fixed bottom-10 right-10 animate-bounce"
+          >
+            Learn More
+          </Link>
         </div>
 
         {/* First Content Section */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 mt-10">
           {/* Image */}
           <div className="flex justify-center">
             <Image 
@@ -99,37 +105,6 @@ export default function ReadMore() {
             </ul>
           </div>
         </div>
-
-        {/* Third Content Section */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 mt-10">
-          {/* Image */}
-          <div className="flex justify-center">
-            <Image 
-              src="/IMG-26.jpg" 
-              alt="Educational support" 
-              width={350} 
-              height={350} 
-              className="w-[350px] h-[350px] bg-gray-300 rounded-lg shadow-md transform rotate-6"
-            />
-          </div>
-          {/* Text */}
-          <div className="text-center md:text-left">
-            <h2 className="text-xl font-semibold text-black">Unlocking Hidden Treasures</h2>
-            <p className="text-gray-800 mt-2 leading-relaxed">
-              Join us in uncovering the gold within every learner.
-            </p>
-            <p className="text-gray-800 mt-2 leading-relaxed">
-              Gold Acres Learning Center: Uncovering the hidden treasures within every individual.
-            </p>
-          </div>
-        </div>
-        <Link 
-          href="/more"
-          className="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 
-          transition absolute top-25 right-8"
-        >
-          Learn More
-        </Link>
       </main>
 
       {/* Footer */}

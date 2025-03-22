@@ -6,13 +6,13 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-white relative" style={{ backgroundImage: "url('/Brick-image.jpeg')" }}>
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-purple-300 via-blue-200 to-blue-400 bg-opacity-80 relative">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="w-full min-h-screen relative flex items-center justify-center text-black" style={{ backgroundImage: "url('/Brick-image.jpeg')" }}>
+      <section className="w-full min-h-screen  flex items-center justify-center text-black bg-gradient-to-br from-purple-300 via-blue-200 to-blue-400 bg-opacity-80 relative">
         <div className="absolute inset-0 w-full h-full z-0">
-          <Image
+          <Image 
             src="/IMG-17.jpg"
             alt="Background Image"
             fill
@@ -25,7 +25,7 @@ export default function Home() {
       </section>
     
       {/* About Section */}
-      <section className="flex flex-col md:flex-row items-center shadow-lg px-6 py-12 max-w-6xl mx-auto text-black" style={{ backgroundImage: "url('/Brick-image.jpeg')" }}>
+      <section className="flex flex-col md:flex-row items-center shadow-lg px-6 py-12 max-w-6xl mx-auto text-black bg-gradient-to-br from-purple-200 via-blue-100 to-blue-300 bg-opacity-70 ">
         <div className="w-full md:w-1/2 flex justify-center">
           <Image src="/Her-image.jpeg" width={400} height={300} alt="About Image" className="shadow-lg rounded-lg w-full max-w-sm md:max-w-md" />
         </div>

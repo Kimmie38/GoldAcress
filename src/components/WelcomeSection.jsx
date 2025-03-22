@@ -14,11 +14,11 @@ export default function WelcomeSection() {
           />
         </div>
         <div className="w-full md:w-1/2 mt-6 md:mt-12 md:ml-8">
-          <h2 className="text-4xl font-bold mb-6 text-blue-700">Welcome to Gold Acres Learning Center</h2>
-          <p className="mb-4 text-lg  text-amber-900">
+          <h2 className="text-4xl font-bold mb-6 text-black">Welcome to Gold Acres Learning Center</h2>
+          <p className="mb-4 text-lg  text-black">
             At Gold Acres, we believe every individual possesses hidden treasures waiting to be unearthed. Our mission is to provide a nurturing environment where learners of all abilities discover, develop, and showcase their unique strengths.
           </p>
-          <p className="mb-4 text-amber-900 text-lg">
+          <p className="mb-4 text-black text-lg">
             We foster creativity, critical thinking, and a passion for lifelong learning. Through engaging activities and personalized guidance, we empower students to shine in their own unique ways.
           </p>
         </div>

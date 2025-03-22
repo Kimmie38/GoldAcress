@@ -11,7 +11,7 @@ const ContactPage = () => {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-200"style={{ backgroundImage: "url('/Brick-image.jpeg')" }}>
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-purple-300 via-blue-200 to-blue-400 bg-opacity-80 ">
       {/* Navbar with reduced height */}
       <div className="h-12">
         <Navbar />
