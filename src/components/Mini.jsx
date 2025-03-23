@@ -25,8 +25,8 @@ const Mini = () => {
           A Bit Of Us
         </h2>
         <p className="text-lg text-gray-200 mb-8">
-          We provide exceptional education with a nurturing approach, ensuring 
-          each student flourishes in a supportive environment.
+          {/* We provide exceptional education with a nurturing approach, ensuring 
+          each student flourishes in a supportive environment. */}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">

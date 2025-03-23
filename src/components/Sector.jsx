@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Hero = () => {
+const Sector = () => {
   return (
     <section className="relative w-full h-screen flex items-center bg-black/50">
       <div className="absolute inset-0">
@@ -45,4 +45,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Sector;
