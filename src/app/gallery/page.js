@@ -1,6 +1,9 @@
-// import Image from "next/image";
+"use client"; // ← Add this at the top
+
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const images = [
   "/IMG-1.jpg", "/IMG-2.jpg", "/IMG-3.jpg", "/IMG-4.jpg",
@@ -11,21 +14,56 @@ const images = [
 ];
 
 export default function Gallery() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
-    <div className="min-h-screen bg-gray-100 py-12"style={{ backgroundImage: "url('/Brick-image.jpeg')" }}>
+    <div className="min-h-screen bg-gray-100 py-12" style={{ backgroundImage: "url('/Brick-image.jpeg')" }}>
       <Navbar />
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-10">Gallery</h1>
+
+      {/* Image Grid */}
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-  {images.map((image, index) => (
-    <div key={index} className="w-full h-auto overflow-hidden rounded-lg">
-      <img 
-        src={image} 
-        alt={`Gallery image ${index + 1}`} 
-        className="w-full h-auto object-cover"
-      />
-    </div>
-  ))}
-</div>
+        {images.map((image, index) => (
+          <div 
+            key={index} 
+            className="w-full h-auto overflow-hidden rounded-lg cursor-pointer"
+            onClick={() => setSelectedImage(image)}
+          >
+            <Image 
+              src={image} 
+              alt={`Gallery image ${index + 1}`} 
+              width={300}
+              height={200}
+              className="w-full h-auto object-cover rounded-lg transition-transform hover:scale-105"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Modal for Full Image View */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-gradient-to-br from-blue-300 via-blue-100 to-purple-300  bg-opacity-80 flex justify-center items-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-3xl">
+            <Image
+              src={selectedImage}
+              alt="Selected Image"
+              width={800}
+              height={600}
+              className="rounded-lg"
+            />
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full font-bold text-lg"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </div>
   );

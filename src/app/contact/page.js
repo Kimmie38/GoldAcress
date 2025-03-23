@@ -36,8 +36,8 @@ const ContactPage = () => {
           <div className="flex items-center justify-center space-x-3 mb-4">
             <FaEnvelope className="text-blue-600 text-lg" />
             <a
-              href="mailto:info@goldacres.com"
-              className="text-gray-700 hover:text-blue-600 text-sm"
+              href="mailto:goldacres24@gmail.com"
+              className="text-gray-700 hover:text-blue-600 text-1xl"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -48,17 +48,17 @@ const ContactPage = () => {
           {/* Phone Number */}
           <div className="flex items-center justify-center space-x-3 mb-4">
             <FaPhone className="text-green-600 text-lg" />
-            <a href="tel:+2348068517911" className="text-gray-700 hover:text-green-600 text-sm">
+            <a href="tel:+2348068517911" className="text-gray-700 text-1xl hover:text-green-600 ">
               +234 806 851 7911
             </a>
           </div>
 
           {/* Social Media Links */}
           <div className="flex justify-center space-x-6 mt-4">
-            <Link href="https://facebook.com/goldacres" target="_blank" className="text-blue-600 text-xl hover:scale-110">
+            <Link href="https://facebook.com/goldacres" target="_blank" className="text-blue-600 text-4xl hover:scale-110">
               <FaFacebook />
             </Link>
-            <Link href="https://instagram.com/goldacres" target="_blank" className="text-pink-500 text-xl hover:scale-110">
+            <Link href="https://instagram.com/goldacres" target="_blank" className="text-pink-500 text-4xl hover:scale-110 w-2">
               <FaInstagram />
             </Link>
           </div>

@@ -16,10 +16,11 @@ const Hero = () => {
       </div>
 
       <div className="relative text-white text-left px-6 md:px-12 max-w-3xl ml-8">
-        <h1 className="text-6xl md:text-5xl font-bold leading-tight mb-4 w-full">
-          <span className="block">Give A Child</span>
-          <span className="block"> The Gift Of Learning</span>
-        </h1>
+      <h1 className="text-6xl md:text-6xl font-bold leading-tight mb-4 w-full text-center">
+    <span className="block">Give A Child</span>
+    <span className="block">The Gift</span>
+    <span className="block">Of Learning</span>
+    </h1>
 
         <p className="text-lg md:text-xl mb-6 max-w-2xl">
           Transforming lives one step at a time
