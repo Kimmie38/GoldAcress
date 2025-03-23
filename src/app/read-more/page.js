@@ -44,7 +44,7 @@ export default function ReadMore() {
           </p>
           <Link 
             href="/more"
-            className="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition fixed bottom-10 right-10 animate-bounce"
+            className="mt-6 inline-block bg-blue-600 text-white text-2xl px-8 py-2 rounded-lg hover:bg-blue-700 transition fixed bottom-10 right-10 animate-bounce"
           >
             Learn More
           </Link>

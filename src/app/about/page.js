@@ -32,9 +32,9 @@ export default function Home() {
         <div className="w-full md:w-1/2 md:pl-6 mt-6 md:mt-0 text-lg leading-relaxed">
           <h2 className="text-3xl font-bold mb-4 text-center md:text-left">The Birth Of GoldAcres:</h2>
           <p className="mt-4 pr-4 md:pr-9 text-justify">
-            In 2023, a chance encounter with a 22-year-old woman with special needs sparked a vision. 
-            I saw an opportunity to make a difference by providing personalized attention and patient instruction. From the fundamentals of fine motor skills—
-            cutting paper, using scissors, tying shoelaces, and buttoning shirts—to encouraging gross motor skills, our journey began.
+          In 2023, a chance encounter with a 22year old young girl with special needs re-ignited a long vision.
+            I saw an opportunity to make a difference by providing personalized attention and patient instruction. From the fundamentals of fine motor skills
+            cutting paper, using scissors, tying shoelaces, and buttoning shirts to encouraging gross motor skills, our journey began.
             Soon, I was also tutoring a boy suspected to have dyslexia, and adults seeking basic reading and writing skills started reaching out. 
             As demand grew, a pressing need emerged: a dedicated space for learners to gather and continue their education after school, rather than dispersing to individual homes.
           </p>

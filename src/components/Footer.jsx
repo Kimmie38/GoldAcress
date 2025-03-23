@@ -21,6 +21,9 @@ export default function Footer() {
           <p>+234 806 851 7911</p>
         </div>
       </div>
+      <div className="text-center text-1xl mt-4 opacity-70 font-bold">
+      Motto: Only leave Discover, Develop,Thrive
+      </div>
 
       {/* Copyright Section */}
       <div className="text-center text-sm mt-4 opacity-70">

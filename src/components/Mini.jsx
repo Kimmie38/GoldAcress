@@ -24,10 +24,10 @@ const Mini = () => {
         <h2 className="text-4xl font-extrabold text-gray-900 mb-6">
           A Bit Of Us
         </h2>
-        <p className="text-lg text-gray-200 mb-8">
-          {/* We provide exceptional education with a nurturing approach, ensuring 
-          each student flourishes in a supportive environment. */}
-        </p>
+        <p className="text-lg text-black mb-8 font-bold">
+          <span>Join us in uncovering the gold within every individual</span>
+        </p> 
+        <p className="text-lg text-black mb-8 font-bold">GoldAcres Learning Center:"Uncovering the hidden treasures within every individual."</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
           {/* Image 1 */}
